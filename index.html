@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LQresier</title>
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery.ckLine.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript">
+        $(function(){
+            $('#ckLine').ckLine({
+                leftRight: false,
+                strokeColor: 'rgba(255,255,255,0.4)',
+                interval: 1500,
+                animateTime: 2000,
+                animationTimeRange: [2000, 2500]
+            });
+        });
+    </script>
+</head>
+<body>
+    <svg id="ckLine" width="100%" height="100%"></svg>
+    <div id="container_main">
+        <div id="main">
+            <img id="portrait" src="images/me.jpg" ondragstart="return false">
+            <p id="name">LQresier</p>
+            <p class="signature">不一样&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p class="signature">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;又一样</p>
+            <nav>
+                <ul>
+                    <li>
+                        <span>csdn</span>
+                        <a href="https://blog.csdn.net/qq_35638156" target="_blank">
+                            <i class="fa fa-globe" aria-hidden="true" style="font-size: 2em;color: #fff;line-height: 2em"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <span>github</span>
+                        <a href="https://github.com/LQresier" target="_blank">
+                            <i class="fa fa-github" aria-hidden="true" style="font-size: 2em;color: #fff;line-height: 2em"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <span>call我</span>
+                        <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=yfj5_-z6--v7--qJuLjnqqak" target="_blank">
+                            <i class="fa fa-envelope-o" aria-hidden="true" style="font-size: 2em;color: #fff;line-height: 2em"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <span>建设中</span>
+                        <a>
+                            <i class="fa fa-rocket" aria-hidden="true" style="font-size: 2em;color: #fff;line-height: 2em"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <footer id="footer">
+        <span id="copyright">Copyright © 2018   lqresier.top   All Rights Reserved</span>
+    </footer>
+</body>
+</html>
